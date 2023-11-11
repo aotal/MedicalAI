@@ -1,0 +1,53 @@
+# Esquema de Bard sobre asignatura en AI
+
+Here's a comprehensive outline of topics to cover in a medical degree course on artificial intelligence (AI) applications in medicine:
+
+## Introduction to Artificial Intelligence (AI)
+
+### Overview of AI concepts and terminology
+
+### Types of AI: machine learning, deep learning, natural language processing
+
+### Applications of AI in various industries
+
+### Ethical considerations and societal impact of AI
+
+## AI in Medical Diagnosis and Imaging Analysis
+
+### AI-powered image analysis for disease detection and classification
+
+### Computer-aided diagnosis (CAD) systems for radiology, pathology, and other medical imaging
+
+### AI-driven risk stratification and prediction of patient outcomes
+
+### Applications of AI in personalized medicine and treatment planning
+
+## AI in Drug Discovery and Development
+
+### High-throughput screening and virtual patient modeling for drug discovery
+
+### AI-powered clinical trial design and patient selection
+
+### Applications of AI in personalized medicine and pharmacogenomics
+
+## AI in Clinical Decision Support and Patient Management
+
+### AI-driven clinical decision support systems for diagnosis, treatment, and risk assessment
+
+### AI-based predictive analytics for patient outcomes and resource allocation
+
+### AI-powered chatbots and virtual assistants for patient engagement and education
+
+### Applications of AI in remote patient monitoring and telemedicine
+
+## Emerging Trends and Future Directions of AI in Medicine**
+
+### Integration of AI into electronic health records (EHRs) and clinical workflows
+
+### Development of AI-driven surgical robots and minimally invasive procedures
+
+### Applications of AI in personalized medicine and genomics
+
+### Ethical considerations and regulatory frameworks for AI in healthcare
+
+In addition to these core topics, consider incorporating hands-on practical sessions where students can apply AI tools and techniques to real-world medical scenarios. This will help them gain a deeper understanding of the practical applications of AI in medicine and prepare them for future advancements in the field.
