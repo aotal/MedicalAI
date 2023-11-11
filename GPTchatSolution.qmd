@@ -26,11 +26,130 @@ Designing a course on artificial intelligence for a medical degree is an excelle
 
 ### Preprocessing of Medical Data
 
+1. **Data Cleaning:**
+   - Handling missing values: Imputation or removal of missing data points.
+   - Dealing with outliers: Identifying and handling data points that deviate significantly from the norm.
+   - Correcting inaccuracies: Addressing errors or inconsistencies in the data.
+
+2. **Normalization and Scaling:**
+   - Scaling numerical features to a standard range to ensure they contribute equally to the analysis.
+   - Normalizing data to have a standard distribution for machine learning algorithms sensitive to the scale of variables.
+
+3. **Data Integration:**
+   - Combining data from different sources to create a more comprehensive dataset.
+   - Resolving conflicts and ensuring consistency in integrated datasets.
+
+4. **Feature Engineering:**
+   - Creating new features that may enhance the predictive power of the model.
+   - Selecting relevant features based on domain knowledge and analysis.
+
+5. **Data Transformation:**
+   - Converting categorical variables into numerical representations (one-hot encoding).
+   - Handling time-series data and temporal features appropriately.
+
+6. **De-identification:**
+   - Removing or anonymizing personally identifiable information (PII) to comply with privacy regulations.
+
+7. **Handling Imbalanced Data:**
+   - Addressing class imbalances in datasets to prevent biases in model training.
+
+8. **Image Preprocessing (for medical imaging data):**
+   - Image normalization and standardization.
+   - Resizing or cropping images to a consistent format.
+   - Augmenting images to increase the diversity of the dataset.
+
+
 #### Cleaning, normalization, and feature engineering
 
 #### Dealing with missing data
 
 ### Medical Imaging and AI
+
+Medical Imaging and AI represent a rapidly evolving field that has the potential to transform healthcare by enhancing diagnostics, improving treatment planning, and streamlining workflows. Here's an overview of the topic along with some suggested bibliography to delve deeper:
+
+### **Medical Imaging and AI: Overview**
+
+1. **Introduction to Medical Imaging:**
+   - Medical imaging involves various modalities such as X-ray, MRI, CT scans, ultrasound, and more.
+   - Each modality generates large datasets that require sophisticated analysis for interpretation.
+
+2. **Challenges in Medical Imaging:**
+   - Interpretation variability among radiologists.
+   - Time-intensive analysis and diagnosis.
+   - The need for early and accurate detection of abnormalities.
+
+3. **Role of AI in Medical Imaging:**
+   - Automating image analysis for faster and more consistent results.
+   - Assisting radiologists in detecting, diagnosing, and monitoring diseases.
+   - Enhancing precision and efficiency in medical image interpretation.
+
+
+
+1. **"Deep Learning in Medical Image Analysis" by Qi Dou, Hao Chen, Pheng-Ann Heng, and Dinggang Shen:**
+   - This book provides a comprehensive overview of deep learning techniques applied to medical image analysis. It covers both fundamentals and advanced topics.
+
+2. **"Machine Learning and Medical Imaging" by Guorong Wu, Dinggang Shen, Mert R. Sabuncu, and Kelvin K. Leung:**
+   - Explores the integration of machine learning algorithms with medical imaging techniques, covering applications and challenges.
+
+3. **"Handbook of Medical Image Computing and Computer-Assisted Intervention" edited by Nicholas Ayache, Sébastien Ourselin, and Anthony Maeder:**
+   - A comprehensive reference that covers various aspects of medical image computing, including the application of AI.
+
+https://doi.org/10.1016/B978-0-12-816176-0.00006-5
+https://doi.org/10.1016/B978-0-12-816176-0.00007-7
+https://doi.org/10.1016/B978-0-12-816176-0.00008-9
+https://doi.org/10.1016/B978-0-12-816176-0.00009-0
+https://doi.org/10.1016/B978-0-12-816176-0.00010-7
+https://doi.org/10.1016/B978-0-12-816176-0.00011-9
+https://doi.org/10.1016/B978-0-12-816176-0.00012-0
+https://doi.org/10.1016/B978-0-12-816176-0.00013-2
+https://doi.org/10.1016/B978-0-12-816176-0.00014-4
+https://doi.org/10.1016/B978-0-12-816176-0.00015-6
+https://doi.org/10.1016/B978-0-12-816176-0.00016-8
+https://doi.org/10.1016/B978-0-12-816176-0.00017-X
+https://doi.org/10.1016/B978-0-12-816176-0.00018-1
+https://doi.org/10.1016/B978-0-12-816176-0.00019-3
+https://doi.org/10.1016/B978-0-12-816176-0.00020-X
+https://doi.org/10.1016/B978-0-12-816176-0.00021-1
+https://doi.org/10.1016/B978-0-12-816176-0.00022-3
+https://doi.org/10.1016/B978-0-12-816176-0.00023-5
+https://doi.org/10.1016/B978-0-12-816176-0.00024-7
+https://doi.org/10.1016/B978-0-12-816176-0.00025-9
+https://doi.org/10.1016/B978-0-12-816176-0.00026-0
+https://doi.org/10.1016/B978-0-12-816176-0.00027-2
+https://doi.org/10.1016/B978-0-12-816176-0.00028-4
+https://doi.org/10.1016/B978-0-12-816176-0.00029-6
+https://doi.org/10.1016/B978-0-12-816176-0.00030-2
+https://doi.org/10.1016/B978-0-12-816176-0.00031-4
+https://doi.org/10.1016/B978-0-12-816176-0.00032-6
+https://doi.org/10.1016/B978-0-12-816176-0.00033-8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4. **"Medical Image Analysis" by Atam P. Dhawan and Jasjit S. Suri:**
+   - This book offers insights into the principles and applications of medical image analysis, including the role of AI techniques.
+
+5. **"Machine Learning in Medicine: A Complete Overview" by Ton J. Cleophas and Aeilko H. Zwinderman:**
+   - A broader exploration of machine learning applications in medicine, including medical imaging.
+
+6. **"Deep Learning for Medical Image Analysis" by Ronald M. Summers:**
+   - A review article that discusses the impact of deep learning on medical image analysis, emphasizing the integration of AI into clinical practice.
+
+7. **"AI in Medical Imaging: A Grand Challenge" by Paul J. Chang:**
+   - An editorial providing insights into the challenges and potential of AI in medical imaging.
+
+8. **"Radiology's Next Top Model: Do We Need Superhuman Imaging?" by Bradley J. Erickson and Panagiotis Korfiatis:**
+   - A perspective on the role of AI in radiology and its impact on the future of medical imaging.
 
 #### Introduction to medical imaging modalities
 
