@@ -16,7 +16,7 @@ Designing a course on artificial intelligence for a medical degree is an excelle
 
 #### Training, testing, and validation
 
-### Data in Healthcare 
+### Data in Healthcare
 
 #### Challenges and opportunities
 
@@ -26,38 +26,30 @@ Designing a course on artificial intelligence for a medical degree is an excelle
 
 ### Preprocessing of Medical Data
 
-1. **Data Cleaning:**
-   - Handling missing values: Imputation or removal of missing data points.
-   - Dealing with outliers: Identifying and handling data points that deviate significantly from the norm.
-   - Correcting inaccuracies: Addressing errors or inconsistencies in the data.
-
-2. **Normalization and Scaling:**
-   - Scaling numerical features to a standard range to ensure they contribute equally to the analysis.
-   - Normalizing data to have a standard distribution for machine learning algorithms sensitive to the scale of variables.
-
-3. **Data Integration:**
-   - Combining data from different sources to create a more comprehensive dataset.
-   - Resolving conflicts and ensuring consistency in integrated datasets.
-
-4. **Feature Engineering:**
-   - Creating new features that may enhance the predictive power of the model.
-   - Selecting relevant features based on domain knowledge and analysis.
-
-5. **Data Transformation:**
-   - Converting categorical variables into numerical representations (one-hot encoding).
-   - Handling time-series data and temporal features appropriately.
-
-6. **De-identification:**
-   - Removing or anonymizing personally identifiable information (PII) to comply with privacy regulations.
-
-7. **Handling Imbalanced Data:**
-   - Addressing class imbalances in datasets to prevent biases in model training.
-
-8. **Image Preprocessing (for medical imaging data):**
-   - Image normalization and standardization.
-   - Resizing or cropping images to a consistent format.
-   - Augmenting images to increase the diversity of the dataset.
-
+1.  **Data Cleaning:**
+    -   Handling missing values: Imputation or removal of missing data points.
+    -   Dealing with outliers: Identifying and handling data points that deviate significantly from the norm.
+    -   Correcting inaccuracies: Addressing errors or inconsistencies in the data.
+2.  **Normalization and Scaling:**
+    -   Scaling numerical features to a standard range to ensure they contribute equally to the analysis.
+    -   Normalizing data to have a standard distribution for machine learning algorithms sensitive to the scale of variables.
+3.  **Data Integration:**
+    -   Combining data from different sources to create a more comprehensive dataset.
+    -   Resolving conflicts and ensuring consistency in integrated datasets.
+4.  **Feature Engineering:**
+    -   Creating new features that may enhance the predictive power of the model.
+    -   Selecting relevant features based on domain knowledge and analysis.
+5.  **Data Transformation:**
+    -   Converting categorical variables into numerical representations (one-hot encoding).
+    -   Handling time-series data and temporal features appropriately.
+6.  **De-identification:**
+    -   Removing or anonymizing personally identifiable information (PII) to comply with privacy regulations.
+7.  **Handling Imbalanced Data:**
+    -   Addressing class imbalances in datasets to prevent biases in model training.
+8.  **Image Preprocessing (for medical imaging data):**
+    -   Image normalization and standardization.
+    -   Resizing or cropping images to a consistent format.
+    -   Augmenting images to increase the diversity of the dataset.
 
 ### Medical Imaging and AI
 
@@ -65,118 +57,64 @@ Medical Imaging and AI represent a rapidly evolving field that has the potential
 
 ### **Medical Imaging and AI: Overview**
 
-1. **Introduction to Medical Imaging:**
-   - Medical imaging involves various modalities such as X-ray, MRI, CT scans, ultrasound, and more.
-   - Each modality generates large datasets that require sophisticated analysis for interpretation.
+1.  **Introduction to Medical Imaging:**
+    -   Medical imaging involves various modalities such as X-ray, MRI, CT scans, ultrasound, and more.
+    -   Each modality generates large datasets that require sophisticated analysis for interpretation.
 
 #### Challenges in Medical Imaging
 
 The application of artificial intelligence (AI) in medical imaging holds great promise, but it also comes with several challenges that advancements in AI can help address. Here are some key challenges in medical imaging that can benefit from the progress of AI:
 
-1. **Interpretation Variability:**
-   - **Challenge:** Different radiologists may interpret images differently, leading to variability in diagnoses.
-   - **AI Solution:** AI algorithms can provide consistent and objective image analysis, reducing variability and improving diagnostic accuracy.
-
-2. **Time-Intensive Analysis:**
-   - **Challenge:** Manual analysis of medical images is time-consuming, particularly as the volume of imaging data continues to grow.
-   - **AI Solution:** AI can automate image analysis, enabling faster and more efficient interpretation of medical images, which is critical for timely patient care.
-
-3. **Early Detection and Diagnosis:**
-   - **Challenge:** Detecting abnormalities in their early stages is crucial for effective treatment, but it can be challenging for human observers.
-   - **AI Solution:** AI algorithms excel at identifying subtle patterns and anomalies, enabling earlier detection of diseases and conditions.
-
-4. **Integration of Multimodal Imaging:**
-   - **Challenge:** Integrating information from various imaging modalities (MRI, CT, PET, etc.) for a comprehensive diagnosis can be complex.
-   - **AI Solution:** AI can facilitate the fusion and interpretation of multimodal imaging data, providing a holistic view for clinicians.
-
-5. **Handling Big Data:**
-   - **Challenge:** The increasing volume and complexity of medical imaging data pose challenges for storage, management, and analysis.
-   - **AI Solution:** AI algorithms, particularly deep learning models, can efficiently handle large datasets, extracting meaningful insights from vast amounts of medical imaging information.
-
-6. **Limited Access to Expertise:**
-   - **Challenge:** Specialized medical imaging expertise may be scarce in certain regions, limiting access to accurate diagnoses.
-   - **AI Solution:** AI can act as a force multiplier, providing automated analysis and decision support even in areas with limited access to expert radiologists.
-
-7. **Noise and Artifacts:**
-   - **Challenge:** Medical images often contain noise and artifacts that can complicate interpretation.
-   - **AI Solution:** AI algorithms can be trained to recognize and filter out noise and artifacts, enhancing the quality of images for more accurate analysis.
-
-8. **Personalized Medicine:**
-   - **Challenge:** Tailoring treatments to individual patients based on their unique characteristics is complex.
-   - **AI Solution:** AI can contribute to personalized medicine by analyzing imaging data alongside other patient-specific information to guide personalized treatment plans.
-
-9. **Security and Privacy:**
-   - **Challenge:** Medical imaging data must be handled securely, and patient privacy must be protected.
-   - **AI Solution:** AI systems need to be designed with robust security and privacy measures, ensuring compliance with healthcare regulations.
-
+1.  **Interpretation Variability:**
+    -   **Challenge:** Different radiologists may interpret images differently, leading to variability in diagnoses.
+    -   **AI Solution:** AI algorithms can provide consistent and objective image analysis, reducing variability and improving diagnostic accuracy.
+2.  **Time-Intensive Analysis:**
+    -   **Challenge:** Manual analysis of medical images is time-consuming, particularly as the volume of imaging data continues to grow.
+    -   **AI Solution:** AI can automate image analysis, enabling faster and more efficient interpretation of medical images, which is critical for timely patient care.
+3.  **Early Detection and Diagnosis:**
+    -   **Challenge:** Detecting abnormalities in their early stages is crucial for effective treatment, but it can be challenging for human observers.
+    -   **AI Solution:** AI algorithms excel at identifying subtle patterns and anomalies, enabling earlier detection of diseases and conditions.
+4.  **Integration of Multimodal Imaging:**
+    -   **Challenge:** Integrating information from various imaging modalities (MRI, CT, PET, etc.) for a comprehensive diagnosis can be complex.
+    -   **AI Solution:** AI can facilitate the fusion and interpretation of multimodal imaging data, providing a holistic view for clinicians.
+5.  **Handling Big Data:**
+    -   **Challenge:** The increasing volume and complexity of medical imaging data pose challenges for storage, management, and analysis.
+    -   **AI Solution:** AI algorithms, particularly deep learning models, can efficiently handle large datasets, extracting meaningful insights from vast amounts of medical imaging information.
+6.  **Limited Access to Expertise:**
+    -   **Challenge:** Specialized medical imaging expertise may be scarce in certain regions, limiting access to accurate diagnoses.
+    -   **AI Solution:** AI can act as a force multiplier, providing automated analysis and decision support even in areas with limited access to expert radiologists.
+7.  **Noise and Artifacts:**
+    -   **Challenge:** Medical images often contain noise and artifacts that can complicate interpretation.
+    -   **AI Solution:** AI algorithms can be trained to recognize and filter out noise and artifacts, enhancing the quality of images for more accurate analysis.
+8.  **Personalized Medicine:**
+    -   **Challenge:** Tailoring treatments to individual patients based on their unique characteristics is complex.
+    -   **AI Solution:** AI can contribute to personalized medicine by analyzing imaging data alongside other patient-specific information to guide personalized treatment plans.
+9.  **Security and Privacy:**
+    -   **Challenge:** Medical imaging data must be handled securely, and patient privacy must be protected.
+    -   **AI Solution:** AI systems need to be designed with robust security and privacy measures, ensuring compliance with healthcare regulations.
 10. **Clinical Validation and Adoption:**
-    - **Challenge:** Acceptance of AI in clinical practice requires rigorous validation, integration into existing workflows, and clinician training.
-    - **AI Solution:** Continued research, collaboration, and efforts to validate AI algorithms in diverse clinical settings will contribute to broader adoption.
+    -   **Challenge:** Acceptance of AI in clinical practice requires rigorous validation, integration into existing workflows, and clinician training.
+    -   **AI Solution:** Continued research, collaboration, and efforts to validate AI algorithms in diverse clinical settings will contribute to broader adoption.
 
 Addressing these challenges requires ongoing collaboration between AI researchers, healthcare professionals, and regulatory bodies to ensure the responsible and effective deployment of AI in medical imaging. The advancements in AI technologies can play a pivotal role in overcoming these challenges and improving patient outcomes.
 
-3. **Role of AI in Medical Imaging:**
-   - Automating image analysis for faster and more consistent results.
-   - Assisting radiologists in detecting, diagnosing, and monitoring diseases.
-   - Enhancing precision and efficiency in medical image interpretation.
+3.  **Role of AI in Medical Imaging:**
+    -   Automating image analysis for faster and more consistent results.
+    -   Assisting radiologists in detecting, diagnosing, and monitoring diseases.
+    -   Enhancing precision and efficiency in medical image interpretation.
 
+https://doi.org/10.1016/B978-0-12-816176-0.00006-5 https://doi.org/10.1016/B978-0-12-816176-0.00007-7 https://doi.org/10.1016/B978-0-12-816176-0.00008-9 https://doi.org/10.1016/B978-0-12-816176-0.00009-0 https://doi.org/10.1016/B978-0-12-816176-0.00010-7 https://doi.org/10.1016/B978-0-12-816176-0.00011-9 https://doi.org/10.1016/B978-0-12-816176-0.00012-0 https://doi.org/10.1016/B978-0-12-816176-0.00013-2 https://doi.org/10.1016/B978-0-12-816176-0.00014-4 https://doi.org/10.1016/B978-0-12-816176-0.00015-6 https://doi.org/10.1016/B978-0-12-816176-0.00016-8 https://doi.org/10.1016/B978-0-12-816176-0.00017-X https://doi.org/10.1016/B978-0-12-816176-0.00018-1 https://doi.org/10.1016/B978-0-12-816176-0.00019-3 https://doi.org/10.1016/B978-0-12-816176-0.00020-X https://doi.org/10.1016/B978-0-12-816176-0.00021-1 https://doi.org/10.1016/B978-0-12-816176-0.00022-3 https://doi.org/10.1016/B978-0-12-816176-0.00023-5 https://doi.org/10.1016/B978-0-12-816176-0.00024-7 https://doi.org/10.1016/B978-0-12-816176-0.00025-9 https://doi.org/10.1016/B978-0-12-816176-0.00026-0 https://doi.org/10.1016/B978-0-12-816176-0.00027-2 https://doi.org/10.1016/B978-0-12-816176-0.00028-4 https://doi.org/10.1016/B978-0-12-816176-0.00029-6 https://doi.org/10.1016/B978-0-12-816176-0.00030-2 https://doi.org/10.1016/B978-0-12-816176-0.00031-4 https://doi.org/10.1016/B978-0-12-816176-0.00032-6 https://doi.org/10.1016/B978-0-12-816176-0.00033-8
 
-https://doi.org/10.1016/B978-0-12-816176-0.00006-5
-https://doi.org/10.1016/B978-0-12-816176-0.00007-7
-https://doi.org/10.1016/B978-0-12-816176-0.00008-9
-https://doi.org/10.1016/B978-0-12-816176-0.00009-0
-https://doi.org/10.1016/B978-0-12-816176-0.00010-7
-https://doi.org/10.1016/B978-0-12-816176-0.00011-9
-https://doi.org/10.1016/B978-0-12-816176-0.00012-0
-https://doi.org/10.1016/B978-0-12-816176-0.00013-2
-https://doi.org/10.1016/B978-0-12-816176-0.00014-4
-https://doi.org/10.1016/B978-0-12-816176-0.00015-6
-https://doi.org/10.1016/B978-0-12-816176-0.00016-8
-https://doi.org/10.1016/B978-0-12-816176-0.00017-X
-https://doi.org/10.1016/B978-0-12-816176-0.00018-1
-https://doi.org/10.1016/B978-0-12-816176-0.00019-3
-https://doi.org/10.1016/B978-0-12-816176-0.00020-X
-https://doi.org/10.1016/B978-0-12-816176-0.00021-1
-https://doi.org/10.1016/B978-0-12-816176-0.00022-3
-https://doi.org/10.1016/B978-0-12-816176-0.00023-5
-https://doi.org/10.1016/B978-0-12-816176-0.00024-7
-https://doi.org/10.1016/B978-0-12-816176-0.00025-9
-https://doi.org/10.1016/B978-0-12-816176-0.00026-0
-https://doi.org/10.1016/B978-0-12-816176-0.00027-2
-https://doi.org/10.1016/B978-0-12-816176-0.00028-4
-https://doi.org/10.1016/B978-0-12-816176-0.00029-6
-https://doi.org/10.1016/B978-0-12-816176-0.00030-2
-https://doi.org/10.1016/B978-0-12-816176-0.00031-4
-https://doi.org/10.1016/B978-0-12-816176-0.00032-6
-https://doi.org/10.1016/B978-0-12-816176-0.00033-8
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-4. **"Medical Image Analysis" by Atam P. Dhawan and Jasjit S. Suri:**
-   - This book offers insights into the principles and applications of medical image analysis, including the role of AI techniques.
-
-5. **"Machine Learning in Medicine: A Complete Overview" by Ton J. Cleophas and Aeilko H. Zwinderman:**
-   - A broader exploration of machine learning applications in medicine, including medical imaging.
-
-6. **"Deep Learning for Medical Image Analysis" by Ronald M. Summers:**
-   - A review article that discusses the impact of deep learning on medical image analysis, emphasizing the integration of AI into clinical practice.
-
-7. **"AI in Medical Imaging: A Grand Challenge" by Paul J. Chang:**
-   - An editorial providing insights into the challenges and potential of AI in medical imaging.
-
-8. **"Radiology's Next Top Model: Do We Need Superhuman Imaging?" by Bradley J. Erickson and Panagiotis Korfiatis:**
-   - A perspective on the role of AI in radiology and its impact on the future of medical imaging.
+4.  **"Medical Image Analysis" by Atam P. Dhawan and Jasjit S. Suri:**
+    -   This book offers insights into the principles and applications of medical image analysis, including the role of AI techniques.
+5.  **"Machine Learning in Medicine: A Complete Overview" by Ton J. Cleophas and Aeilko H. Zwinderman:**
+    -   A broader exploration of machine learning applications in medicine, including medical imaging.
+6.  **"Deep Learning for Medical Image Analysis" by Ronald M. Summers:**
+    -   A review article that discusses the impact of deep learning on medical image analysis, emphasizing the integration of AI into clinical practice.
+7.  **"AI in Medical Imaging: A Grand Challenge" by Paul J. Chang:**
+    -   An editorial providing insights into the challenges and potential of AI in medical imaging.
+8.  **"Radiology's Next Top Model: Do We Need Superhuman Imaging?" by Bradley J. Erickson and Panagiotis Korfiatis:**
+    -   A perspective on the role of AI in radiology and its impact on the future of medical imaging.
 
 #### Introduction to medical imaging modalities
 
@@ -186,19 +124,121 @@ https://doi.org/10.1016/B978-0-12-816176-0.00033-8
 
 ### Clinical Decision Support Systems (CDSS)
 
+#### Versión Elicit
+
+These papers collectively provide an overview of Clinical Decision Support Systems (CDSS) in healthcare. Berner 2016[@berner2016] highlights the potential of CDSS to improve patient safety and change medical practice. Jović 2020[@jovic2020] discusses the different approaches used in designing CDSS, including rule-based and machine learning-based methods. AL-Gamdi 2014[@al-gamdi2014] focuses on the benefits, success factors, and risk factors associated with implementing CDSS in the healthcare industry. Lourdusamy 2020[@lourdusamy2020] explores the history and evolution of CDSS, as well as the challenges and practical considerations in their implementation. These papers provide a comprehensive overview of CDSS in healthcare and can serve as a starting point for further exploration of the topic.
+
+#### Versión de Scite\_
+
+Clinical Decision Support Systems (CDSS) play a crucial role in healthcare by aiding clinicians in making informed decisions based on patient-specific data and assessments[@kawamoto2005]. These systems have been shown to improve practitioner performance and patient outcomes by monitoring the effects of prescribed treatments and facilitating diagnostic test ordering behavior[@garg2005][@roshanov2011]. Furthermore, effective CDSS features have been identified through meta-regression analysis, highlighting factors that differentiate between successful and unsuccessful systems in terms of care process improvements and patient outcomes[@roshanov2013] (Roshanov et al., 2013). CDSS have also been effective in supporting healthcare professionals across various medical practices, including chronic pain management and HIV testing[@zomahoun2021][@smit2022].
+
+Moreover, CDSS have been adapted to cater to specific medical needs, such as the development of a medical decision support system to assess risk factors for gastric cancer and an ontological CDSS based on clinical guidelines for diabetes patients[@mahmoodi2020][@madhusanka2020]. Additionally, these systems have been utilized to guide healthcare providers in the administration of chronic diseases and to support evidence-based medicine, allowing patients to be more involved in the decision-making process[@woo2014][@sim2001].
+
+The integration of semiotics into fuzzy logic has enhanced the application of CDSS in healthcare institutions, demonstrating the increasing utilization of these systems[@chen2014]. Furthermore, the provision of decentralized digital health services, including external software for CDSS, reflects the growing prominence of these systems in the healthcare industry[@meier2021]. Additionally, the use of data mining technologies has been instrumental in predicting nosocomial infections, emphasizing the potential of CDSS in improving healthcare and patient safety[@silva2015].
+
+In conclusion, the comprehensive overview of CDSS in healthcare demonstrates their significant impact on clinical decision-making, patient outcomes, and healthcare delivery. The diverse applications and adaptations of CDSS underscore their versatility and potential to address various medical needs and challenges.
+
 #### Role of AI in clinical decision-making
+
+#### Versión Elicit
+
+These papers collectively highlight the role of artificial intelligence (AI) in clinical decision-making. They emphasize the potential benefits of incorporating AI tools in healthcare, such as improved diagnostic accuracy and addressing human cognitive biases[@brown2023]. AI can support more objective and accurate clinical decision-making processes, particularly in infectious disease settings[@garcia-vidal2019]. However, it is important to consider potential pitfalls associated with AI, including automation bias, data quality issues, and legal/ethical considerations[@brown2023]. Patient values should be taken into account when using AI in clinical care, and a values-based guide can assist clinicians in incorporating patient values into shared decision-making[@macri2023]. AI has the potential to assist in risk stratification, continuous monitoring, and individualized patient care, but caution is needed to prevent misapplication and address concerns of application bias[@giordano2021].
+
+#### Versión de Scite\_
+
+Artificial intelligence (AI) has become increasingly integrated into clinical decision-making processes, offering significant potential to enhance healthcare delivery and patient outcomes. AI aims to replicate human cognitive functions and has been applied in various medical domains, including intensive care medicine, organ transplantation, and endoscopy, to name a few [@clement2021][@cherubini2023][@zhang2020]. AI systems, such as clinical decision support systems (CDSS), have demonstrated the ability to mitigate human biases and judgment errors, thereby improving the accuracy and trust calibration in decision-making[@amann2020][@liu2022]. Furthermore, AI has been instrumental in predicting optimal timing for mechanical ventilation weaning and has the potential to lower medical error rates, improve healthcare consistency, and enhance efficiency[@alatawi2022][@fionda2020].
+
+The integration of AI into clinical decision-making has also been shown to contribute to improved clinical outcomes through the application of predictive models and optimization of decision support systems[@lorenzini2023]. Additionally, AI-based CDSS are becoming increasingly widespread in healthcare and are poised to play a crucial role in diagnostic and treatment processes, offering expert-level information to healthcare professionals[@amann2023][@corsello2023]. Moreover, the use of AI in healthcare has the potential to influence future pediatric research, enhance medical education, expedite drug development, and improve research outcomes[@lawton2023].
+
+However, the successful implementation of AI in clinical decision-making requires considerations of the whole clinical context and the AI's role within it, as well as the need for explainable AI to ensure meaningful clinical and operational capabilities[@yang2022][@tejedalemus2022]. Furthermore, the reliance on AI-assistance in decision-making tasks, including high-stakes scenarios, necessitates empirical investigation and the development of AI-assisted decision support systems to improve clinical outcomes[@niraula2022].
+
+In conclusion, the role of AI in clinical decision-making is multifaceted, encompassing its potential to enhance diagnostic accuracy, treatment decisions, and patient care across various medical specialties. The integration of AI into healthcare holds promise for improving clinical outcomes, mitigating biases, and advancing medical research and education.
 
 #### Case studies of successful CDSS implementations
 
+1.  **IBM Watson for Oncology:**
+
+IBM Watson for Oncology is a widely recognized clinical decision support system (CDSS) that has gained prominence in the field of oncology. It leverages artificial intelligence (AI) to provide evidence-based treatment recommendations for cancer patients. The system has been the subject of numerous studies and evaluations, reflecting its impact on clinical decision-making and patient care.
+
+conducted a double-blinded validation study, demonstrating the reliability of IBM Watson for Oncology in assisting the diagnosis of cancer[@jiang2017]. The system has been gradually popularized worldwide, particularly in the fields of lung cancer, colon cancer, rectal cancer, breast cancer, gastric cancer, and gynecological cancer, establishing its widespread adoption and application in clinical oncology[@wang2023].
+
+The use of IBM Watson for Oncology has sparked debates and discussions, with highlighting its controversial nature as a CDSS for making treatment recommendations for oncological patients[@debrabander2021]. Furthermore, the system has been implemented in various regions, including China, where it has been utilized in clinical practice for patients with cancer, underscoring its global impact[@zhou2018].
+
+Studies have also focused on specific applications of IBM Watson for Oncology, such as its adequacy and effectiveness in the treatment of thyroid carcinoma, demonstrating its relevance in addressing specific cancer types[@yun2021]. Additionally, meta-analyses have been conducted to systematically assess the clinical applications of Watson for Oncology, reflecting the extensive research and scrutiny surrounding its utilization[@jie2021].
+
+The system's impact on specific cancer types, such as colorectal cancer and lung cancer, has been investigated, with reports demonstrating its early experiences and concordance with clinical practice in treating these conditions[@kim2019] [@liu2018]. Moreover, ethical considerations and sustainability best practices have been evaluated in the context of Watson for Oncology, emphasizing the ethical dimensions of its implementation and use in clinical settings[@braun2020][@john2022].
+
+IBM Watson for Oncology's concordance with multidisciplinary tumor boards and its application in determining treatment recommendations for breast cancer patients have been subjects of research, highlighting its role in guiding clinical decision-making and treatment planning[@mcnamara2019][@xu2019]. The system's cognitive computing capabilities have been recognized for personalizing cancer care and providing evidence-based treatment recommendations, further emphasizing its potential to enhance oncology practices[@somashekhar2017].
+
+The feasibility of using IBM Watson's natural language processing algorithm to extract relevant free-text radiology reports has been explored, demonstrating its potential for facilitating data analysis and decision support in oncology [@piotrkowicz2019]. Additionally, the system's differential impact on novice and expert oncologists has been studied, shedding light on its influence on clinical decision-making across different levels of expertise[@zhang2017].
+
+The system's potential to improve oncology decision-making and its application in harnessing real-world evidence have been highlighted, emphasizing its role in advancing oncology practices and treatment decision support[@trivedi2017]. Furthermore, the implementation of intelligent software using IBM Watson and Bluemix has been investigated, reflecting the technological advancements and applications of Watson in healthcare settings[@collinaszy2017].
+
+In conclusion, IBM Watson for Oncology has emerged as a significant AI-powered CDSS in the field of oncology, with extensive research and evaluations highlighting its impact on clinical decision-making, treatment recommendations, and personalized cancer care.
+
+2.  **Diabetes Detection System:**
+
+    Based on the provided references, it is evident that clinical decision support systems (CDSS) play a crucial role in diabetes detection and management. The application of machine learning and data-driven approaches has been instrumental in developing effective CDSS for diabetes prediction and diagnosis
+
+    Yu et al[@yu2010]. presented a potentially useful alternative approach based on support vector machine (SVM) techniques to classify persons with and without common diseases, including diabetes and pre-diabetes. This highlights the potential of SVM modeling for the prediction of diabetes and pre-diabetes, showcasing the relevance of machine learning in diabetes detection
+
+    Sneha & Gangil[@sneha2019] discussed various classifiers and proposed a decision support system that utilizes the AdaBoost algorithm with Decision Stump as a base classifier for diabetes prediction. This emphasizes the utilization of optimal feature selection and classification algorithms in the development of diabetes detection systems.
+
+    Furthermore, Nirantharakumar et al[@nirantharakumar2012] highlighted the role of computerized clinical decision support systems (CDSSs) in the care of inpatients with diabetes in non-critical care settings, emphasizing the importance of CDSS in improving clinical decision-making for diabetes management.
+
+    Romero-Aroca et al.[@romero-aroca2019] utilized the data of more than 1.4 million diabetics in the United States to build a Clinical Decision Support System (CDSS) for predicting diabetic retinopathy, demonstrating the application of CDSS in diabetic complication prediction and management.
+
+    Moreover, Zheng et al.[@zheng2017] evaluated and contrasted the identification performance of widely-used machine learning models for identifying type 2 diabetes through electronic health records, showcasing the significance of machine learning in diabetes identification and prediction.
+
+    The references also highlight the development of clinical decision support systems based on knowledge bases and the application of ensemble learning and support vector machine for diabetes detection and monitoring [@xu2014][@parab2020].
+
+    In conclusion, the references provide comprehensive insights into the application of machine learning, data-driven approaches, and clinical decision support systems for diabetes detection, prediction, and management. These approaches demonstrate the potential to enhance clinical decision-making and improve patient outcomes in diabetes care.
+
+3.  **APACHE: Acute Physiology and Chronic Health Evaluation:**
+
+    Clinical Decision Support Systems (CDSS) play a crucial role in acute physiology and chronic health evaluation, offering valuable support for clinical decision-making and patient care. The references provide comprehensive insights into the application of CDSS in the context of acute and chronic health conditions, including the use of scoring systems and predictive modeling for patient assessment and outcome prediction.
+
+    The Acute Physiology and Chronic Health Evaluation (APACHE) scoring system has been widely utilized for illness severity classification and mortality prediction in critically ill patients[@karvellas2018][@gilani2014][@nakas2016][@sankar2015][@sintchenko2007][@niskanen1994][@wagner1984]. These references highlight the significance of APACHE in assessing the severity of acute and chronic health conditions, demonstrating its utility in clinical decision support.
+
+    Furthermore, the use of CDSS, such as APACHE, has been associated with improved patient outcomes and care processes in acute care settings, emphasizing the positive impact of these systems on clinical practice and patient management [@sahota2011][@zhao2021][@vongerich2023]. The references also underscore the importance of CDSS in supporting decision-making for patients with chronic illnesses, including the management of chronic disease within primary care and the transition from acute care to rehabilitation[@assadi2020][@watt2000][@poulos2011].
+
+    Moreover, the application of CDSS in predicting prognosis, evaluating patient conditions, and supporting extubation prediction in surgical intensive care units has been explored, highlighting the diverse clinical applications of these systems in acute care settings [@tsai2019][@xiong2021][@korkmaztoker2018](Tsai et al., 2019; Xiong et al., 2021; Toker et al., 2018).
+
+    The references also emphasize the need for further development of CDSS and models to support decision-making in stressful and complex acute care environments, reflecting the ongoing efforts to enhance the capabilities of these systems in acute physiology and chronic health evaluation[@vongerich2023].
+
+    In conclusion, the references provide valuable insights into the application of CDSS, scoring systems, and predictive modeling in acute physiology and chronic health evaluation, demonstrating their significance in supporting clinical decision-making, patient assessment, and outcome prediction in acute care settings.
+
 ### Predictive Analytics in Healthcare
+
+We couldn't properly fact-check and verify our response. The below is the raw draft before our verification step, so it might have issues. Please use it at your own risk.
+
+Predictive analytics in healthcare is a rapidly evolving field that leverages machine learning and data-driven approaches to forecast patient outcomes, identify disease patterns, and optimize clinical decision-making. The relationship between predictive analytics and machine learning is integral to the development of advanced models and algorithms for healthcare applications.
+
+The references provide valuable insights into the intersection of predictive analytics and machine learning in healthcare, showcasing the diverse applications and implications of these technologies
+
+Pachamanova et al.[@pachamanova2022] present a case that illustrates the complexity of applying machine learning and predictive analytics in healthcare, emphasizing the ethical considerations and operational challenges associated with these technologies.
+
+Yin & Fernandez[@yin2020] discuss the application of machine learning techniques for forecasting organizational performance, highlighting the role of predictive analytics in business intelligence and its relationship with machine learning.
+
+Xiao et al.[@xiao2018] emphasize the significant performance of deep learning models in healthcare and medical domains, particularly in disease detection and prediction, underscoring the pivotal role of machine learning in predictive analytics for healthcare.
+
+Weng[@weng2020] emphasizes the critical role of machine learning approaches in predictive clinical analytics, highlighting the importance of precision and accuracy in healthcare problems and the potential benefits of data-driven processes in healthcare decision-making.
+
+Doupé et al.[@doupe2019] discuss the use of machine learning to predict healthcare outcomes, including cost, utilization, and quality, demonstrating the wide-ranging applications of predictive analytics and machine learning in healthcare.
+
+Shameer et al.[@shameer2018] underscore the importance of data heterogeneity, feature selection, and choice of machine learning algorithms in the utility of predictive models, emphasizing the intricate relationship between predictive analytics and machine learning in healthcare.
 
 #### Predicting patient outcomes
 
+Machine learning has been applied to predict clinical outcomes in various medical domains, including valvular heart disease, acute coronary syndrome, and neurosurgery, demonstrating its potential for risk stratification and clinical decision-making [@vanbergeijk2021][@myers2017][@buchlak2019]. Additionally, machine learning models have been utilized to improve risk stratification for conditions such as diabetes, hypertension, and endometrial cancer, showcasing the broad applicability of these technologies in healthcare [@boutilier2021][@chen2022][@hart2020].
+
 #### Risk stratification using machine learning
+
+The references also highlight the importance of data-driven approaches and the use of machine learning algorithms for risk stratification, emphasizing the potential for early diagnosis, treatment, and improved patient outcomes \[@özhan2022\]\[@hsieh2018\]@hsieh2018; [@informat]. Moreover, the development of decision support systems based on machine learning algorithms has been explored in various medical contexts, such as periodontitis and telemedicine, underscoring the potential for machine learning to enhance risk stratification and clinical decision-making [@ertas2023][@vodrahalli2023].
 
 ## Natural Language Processing (NLP) in Medicine
 
-### Introduction to NLP 
+### Introduction to NLP
 
 #### Text mining and information extraction
 
@@ -234,7 +274,7 @@ https://doi.org/10.1016/B978-0-12-816176-0.00033-8
 
 ## Implementation and Case Studies
 
-### Implementation Strategies**
+### Implementation Strategies\*\*
 
 #### Integration of AI into clinical workflows
 
@@ -280,6 +320,6 @@ https://doi.org/10.1016/B978-0-12-816176-0.00033-8
 
 ### Project Presentations
 
-### Class Participation and Discussions**
+### Class Participation and Discussions\*\*
 
 This course structure aims to provide a comprehensive understanding of AI in medicine, covering both foundational concepts and practical applications. It's essential to balance theoretical knowledge with hands-on experience to ensure students are well-equipped to apply AI principles in a healthcare setting.
