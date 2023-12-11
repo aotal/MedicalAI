@@ -1,0 +1,19 @@
+# Introduction to AI in Medicine
+
+## Overview of Artificial Intelligence
+
+### Definition and types of AI
+
+### Machine learning, deep learning, and natural language processing
+
+## Fundamentals of Machine Learning
+
+### Supervised learning, unsupervised learning, and reinforcement learning
+
+### Training, testing, and validation
+
+## Data in Healthcare
+
+### Challenges and opportunities
+
+### Electronic health records (EHRs) and other healthcare datasets

@@ -1,0 +1,31 @@
+project:
+  type: book
+
+book:
+  title: "INTEL·LIGÈNCIA ARTIFICIAL EN MEDICINA"
+  author: "UdL"
+  date: "11/3/2023"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - MLFundamentals.qmd
+    - Data.qmd
+    - Images.qmd
+    - ClinicalDecisionsSuportSystems.qmd
+    - NaturalLanguageProcessinginMedicine.qmd
+    - EthicalandLegalConsiderations.qmd
+    - FutureDirectionsandEmergingTrends.qmd
+    - PracticalApplicationsandCaseStudies.qmd
+    - DiscussionandFutureImplications.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+
+

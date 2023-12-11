@@ -8,15 +8,7 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
-    - MLFundamentals.qmd
-    - Data.qmd
-    - Images.qmd
-    - ClinicalDecisionsSuportSystems.qmd
-    - NaturalLanguageProcessinginMedicine.qmd
-    - EthicalandLegalConsiderations.qmd
-    - FutureDirectionsandEmergingTrends.qmd
-    - PracticalApplicationsandCaseStudies.qmd
-    - DiscussionandFutureImplications.qmd
+    - GPTchatSolution.qmd
     - references.qmd
 
 bibliography: references.bib
