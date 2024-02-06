@@ -1,3 +1,121 @@
 # Data Adquisition and Prepocessing
 
-In summary, this book has no content whatsoever.
+## Introducción
+
+En la era digital actual, la disponibilidad masiva de datos ha transformado profundamente la forma en que interactuamos con el mundo. La medicina no es una excepción. Con el advenimiento de la informática y la digitalización de registros médicos, imágenes médicas, datos genéticos y más, los profesionales de la salud tienen acceso a una cantidad sin precedentes de información. Sin embargo, el simple hecho de tener acceso a estos datos no garantiza que se utilicen de manera efectiva para mejorar la atención médica.
+
+Aquí es donde entra en juego el aprendizaje automático (machine learning). El aprendizaje automático es una rama de la inteligencia artificial que se centra en el desarrollo de algoritmos que pueden aprender de datos y hacer predicciones o tomar decisiones basadas en ellos. En el contexto de la medicina, el aprendizaje automático ofrece un enorme potencial para transformar la atención médica de múltiples maneras, desde el diagnóstico y el pronóstico hasta la personalización del tratamiento y la optimización de los procesos clínicos.
+
+Para utilizar el aprendizaje automático de manera efectiva en medicina, es fundamental comprender los datos con los que estamos trabajando. Los datos médicos pueden ser extremadamente complejos y heterogéneos, y a menudo presentan desafíos únicos en términos de calidad, escala y estructura. Desde registros electrónicos de salud (EHR) hasta imágenes médicas, datos genómicos y datos de dispositivos portátiles, cada tipo de datos tiene sus propias características y consideraciones especiales.
+
+En este módulo, exploraremos los fundamentos del manejo de datos para el aprendizaje automático en medicina. Aprenderemos cómo preparar, limpiar y preprocesar datos médicos para su uso en modelos de aprendizaje automático. También discutiremos técnicas avanzadas para extraer características relevantes y reducir la dimensionalidad de conjuntos de datos complejos. Finalmente, exploraremos aplicaciones específicas del aprendizaje automático en medicina, desde el diagnóstico asistido por computadora hasta la predicción de resultados clínicos y la medicina de precisión.
+
+## Clasificación de los datos
+
+Los datos utilizados pueden clasificarse de varias maneras según diferentes criterios. Algunas de las clasificaciones más comunes incluyen:
+
+### Tipo de datos
+
+   - Datos estructurados: Datos organizados en tablas o matrices, como datos numéricos en una hoja de cálculo.
+   - Datos no estructurados: Datos que no tienen una forma predefinida de organización, como texto libre, imágenes, audio o video.
+   - Datos semiestructurados: Datos que tienen alguna estructura pero no encajan perfectamente en un formato tabular, como archivos XML o JSON.
+
+#### Datos estructurados
+
+Los datos estructurados son datos que están organizados de manera sistemática en una forma predefinida y son fácilmente accesibles para análisis. Por lo general, estos datos se almacenan en tablas o bases de datos relacionales, donde cada fila representa una instancia de datos y cada columna representa un atributo o característica específica.
+
+Algunos ejemplos de datos estructurados en el entorno sanitario son:
+
+1. **Registros Electrónicos de Salud (EHR):** Los EHR son sistemas electrónicos de registro de información médica que contienen información detallada sobre la historia clínica de un paciente, incluyendo diagnósticos, tratamientos, resultados de pruebas de laboratorio, medicaciones administradas, registros de visitas médicas, entre otros. Estos datos se estructuran generalmente en tablas con columnas para cada tipo de información, como fecha de la visita, diagnóstico, resultados de laboratorio, etc.
+
+2. **Datos de Laboratorio Clínico:** Estos datos incluyen resultados de pruebas de laboratorio realizadas a los pacientes, como análisis de sangre, orina, pruebas de función hepática, entre otras. Se organizan en tablas con columnas para diferentes tipos de pruebas (por ejemplo, hematología, bioquímica, microbiología) y filas para cada paciente, con valores numéricos que representan los resultados de cada prueba.
+
+3. **Datos de Seguros de Salud:** Las compañías de seguros médicos recopilan y almacenan datos estructurados sobre reclamaciones, cobertura, facturación y otros aspectos relacionados con la prestación de servicios de atención médica. Estos datos se organizan en tablas que contienen información sobre los asegurados, los proveedores de servicios de salud, los procedimientos médicos realizados, los costos asociados, etc.
+
+
+#### Datos no estructurados
+
+Los datos no estructurados son datos que no tienen una forma predefinida de organización y no se pueden almacenar fácilmente en una estructura tabular o en una base de datos relacional. Estos datos suelen ser más complejos y variados en su naturaleza, y pueden incluir texto libre, imágenes, audio, video y otros tipos de contenido sin formato.
+
+Como ejemplos de datos no estructurados se enumeran algunos a continuación:
+
+1. **Historias Clínicas Manuscritas:** Las notas escritas a mano por los profesionales de la salud, como médicos y enfermeras, son un ejemplo común de datos no estructurados en el campo de la medicina. Estas notas pueden contener información detallada sobre la condición del paciente, los síntomas observados, el historial médico, las impresiones clínicas y los planes de tratamiento. Debido a la naturaleza libre del texto y la variabilidad en el estilo de escritura, estas notas son difíciles de estructurar automáticamente y suelen requerir técnicas avanzadas de procesamiento de lenguaje natural (NLP) para su análisis.
+
+2. **Imágenes Médicas:** Las imágenes médicas, como radiografías, tomografías computarizadas (TC), resonancias magnéticas (RM) y ecografías, son otro ejemplo importante de datos no estructurados en medicina. Estas imágenes contienen información visual sobre la anatomía y las estructuras internas del cuerpo humano, pero no se pueden representar fácilmente en forma de tablas o matrices numéricas. El análisis de imágenes médicas generalmente implica técnicas de procesamiento de imágenes y visión por computadora para extraer características relevantes y realizar diagnósticos automatizados.
+
+3. **Archivos de Audio de Consultas Médicas:** Cada vez más, las consultas médicas se graban en formato de audio para fines de documentación y referencia futura. Estos archivos de audio contienen conversaciones entre médicos y pacientes, durante las cuales se pueden discutir síntomas, diagnósticos, tratamientos y recomendaciones médicas. Dado que el contenido de los archivos de audio es completamente hablado y no estructurado, el procesamiento de estos datos implica técnicas avanzadas de reconocimiento de voz y NLP para convertir el habla en texto y extraer información relevante de las conversaciones.
+
+Estos ejemplos muestran la diversidad y complejidad de los datos no estructurados en el ámbito sanitario, así como la necesidad de técnicas avanzadas de análisis de datos para extraer información útil de estos recursos valiosos pero desordenados.
+
+#### Datos semiestructurados
+
+Los datos semiestructurados son una forma intermedia entre datos estructurados y no estructurados. A diferencia de los datos estructurados, que se organizan en tablas con esquemas definidos, y de los datos no estructurados, que carecen de una organización predefinida, los datos semiestructurados tienen una estructura flexible pero parcialmente definida que permite cierto grado de organización.
+
+En el ámbito sanitario, aquí tienes tres ejemplos de datos semiestructurados:
+
+1. **Metadatos:** Por ejemplo, los informes de imágenes médicas, como las radiografías o las resonancias magnéticas, pueden almacenarse en formato [DICOM](https://www.dicomstandard.org/) (Digital Imaging and Communications in Medicine), que utiliza una cabecera donde se incluyen datos de diversa índole y características de la imagen. Aunque estos archivos tienen una estructura definida, la cantidad y el tipo de datos pueden variar según el contexto y el proveedor del sistema de imágenes.
+
+2. **Resultados de Pruebas de Laboratorio en Formato HL7 (Health Level Seven):** [HL7](http://www.hl7.org/) es un estándar de interoperabilidad en el sector de la salud que se utiliza para intercambiar información entre sistemas de información de salud. Los resultados de las pruebas de laboratorio, como análisis de sangre, orina o pruebas genéticas, a menudo se representan en formato HL7, que proporciona una estructura para describir los datos de manera semiestructurada. Aunque los datos siguen un formato definido por el estándar HL7, puede haber variaciones en la forma en que se organizan los datos según el laboratorio o el sistema de información utilizado.
+
+3. **Archivos JSON (Notación de Objetos JavaScript):** JSON es un formato de intercambio de datos ligero y flexible que se utiliza ampliamente en aplicaciones web y servicios de API. En el ámbito sanitario, los datos de registros electrónicos de salud (EHR), como la información del paciente, los diagnósticos, los procedimientos médicos y los medicamentos recetados, a menudo se almacenan y transmiten en formato JSON. Aunque los datos pueden seguir un esquema común, como el estándar FHIR (Fast Healthcare Interoperability Resources), pueden haber extensiones o campos personalizados que hacen que los datos sean semiestructurados.
+
+Estos ejemplos ilustran cómo los datos semiestructurados en el ámbito de la salud tienen cierto grado de organización definida, pero aún conservan flexibilidad en términos de la cantidad y el tipo de datos que pueden contener.
+
+
+
+### Naturaleza de los datos
+
+#### Datos categóricos
+
+ Datos que representan categorías o etiquetas discretas, como el tipo de sangre, el género o el estado civil.
+
+1. **Diagnósticos Médicos:** Los diagnósticos médicos son un ejemplo claro de datos categóricos en medicina. Estos pueden incluir categorías como "diabetes tipo 2", "hipertensión", "asma", etc. Cada diagnóstico representa una categoría discreta en la que un paciente puede ser clasificado.
+Tipos de Tratamiento: Los tipos de tratamiento médico también pueden representarse como datos categóricos. Por ejemplo, "terapia con insulina", "medicamentos antihipertensivos", "fisioterapia", etc. Cada tipo de tratamiento representa una categoría discreta de intervención médica.
+
+2. **Tipos de Tratamiento:** Los tipos de tratamiento médico también pueden representarse como datos categóricos. Por ejemplo, "terapia con insulina", "medicamentos antihipertensivos", "fisioterapia", etc. Cada tipo de tratamiento representa una categoría discreta de intervención médica.
+
+#### Datos numéricos
+
+ Datos que representan cantidades numéricas, ya sean continuas (como la temperatura o la presión arterial) o discretas (como la edad o el número de hijos).
+
+1. **Valores de Laboratorio:** Los resultados de pruebas de laboratorio, como niveles de glucosa en sangre, recuento de glóbulos blancos, nivel de colesterol, etc., son ejemplos de datos numéricos en medicina. Estos datos representan cantidades numéricas que proporcionan información sobre la salud y las funciones del cuerpo.
+
+2. **Mediciones Biométricas:** Las mediciones biométricas, como la altura, el peso, la presión arterial, la frecuencia cardíaca, etc., también son datos numéricos. Estas mediciones proporcionan información sobre características físicas y fisiológicas de los pacientes que pueden ser relevantes para el diagnóstico y el tratamiento médico.
+
+
+####  Datos temporales
+
+ Datos que tienen una dimensión temporal, como series temporales de precios de acciones o registros de pacientes a lo largo del tiempo.
+
+1. **Historial Clínico del Paciente:** El historial clínico de un paciente es un ejemplo prominente de datos temporales en medicina. Este registro documenta la evolución de la salud de un paciente a lo largo del tiempo, incluyendo diagnósticos previos, tratamientos recibidos, resultados de pruebas de laboratorio, visitas médicas, etc. Cada entrada en el historial clínico está marcada con una fecha y hora específicas, lo que permite rastrear la progresión de la enfermedad y evaluar la eficacia de los tratamientos a lo largo del tiempo.
+
+2. **Series Temporales de Signos Vitales:** Los signos vitales, como la temperatura corporal, la frecuencia cardíaca, la presión arterial y la frecuencia respiratoria, se pueden medir de forma regular a lo largo del tiempo para evaluar el estado de salud de un paciente. Estas mediciones se registran como series temporales, donde cada punto de datos está asociado con una marca de tiempo. El análisis de series temporales de signos vitales puede ayudar a detectar patrones anormales, predecir eventos clínicos adversos y ajustar el tratamiento en tiempo real.
+
+
+#### Datos espaciales
+
+ Datos que tienen una dimensión espacial, como imágenes satelitales o mapas geográficos.
+
+ Ejemplo:
+
+
+ **Mapas de Distribución de Enfermedades:**  Los mapas que muestran la distribución geográfica de enfermedades son un ejemplo de datos espaciales en medicina. Estos mapas pueden representar la incidencia de enfermedades infecciosas, como la malaria o el dengue, en diferentes regiones geográficas. El análisis de datos espaciales puede ayudar a identificar patrones de propagación de enfermedades, identificar áreas de alto riesgo y planificar intervenciones de salud pública.
+
+---------------------------
+
+3. **Granularidad de los datos:**
+   - Datos a nivel de instancia: Datos individuales que representan observaciones o eventos específicos, como registros de pacientes o imágenes médicas.
+   - Datos a nivel de atributo: Datos que representan características o atributos de las instancias, como la edad, el peso o los síntomas clínicos.
+
+4. **Fuente de los datos:**
+   - Datos primarios: Datos recopilados directamente de la fuente original, como registros médicos electrónicos (EHR) o resultados de pruebas de laboratorio.
+   - Datos secundarios: Datos que han sido recopilados o procesados por terceros, como conjuntos de datos disponibles en repositorios públicos o bases de datos comerciales.
+
+5. **Volumen de los datos:**
+   - Datos de pequeña escala: Conjuntos de datos relativamente pequeños que pueden caber en la memoria de una sola máquina, como datos de prueba o experimentales.
+   - Datos de gran escala: Conjuntos de datos masivos que requieren sistemas distribuidos o de almacenamiento especializado para su procesamiento, como conjuntos de datos de redes sociales o imágenes médicas de alta resolución.
+
+Estas son solo algunas de las formas de clasificar los datos utilizados en el aprendizaje automático. La comprensión de la naturaleza y las características de los datos es fundamental para seleccionar y aplicar las técnicas de aprendizaje automático más adecuadas para un problema dado.
+
+## Tipos de datos
+
