@@ -61,8 +61,6 @@ En el ámbito sanitario, aquí tienes tres ejemplos de datos semiestructurados:
 
 Estos ejemplos ilustran cómo los datos semiestructurados en el ámbito de la salud tienen cierto grado de organización definida, pero aún conservan flexibilidad en términos de la cantidad y el tipo de datos que pueden contener.
 
-
-
 ### Naturaleza de los datos
 
 #### Datos categóricos
@@ -101,21 +99,58 @@ Tipos de Tratamiento: Los tipos de tratamiento médico también pueden represent
 
  **Mapas de Distribución de Enfermedades:**  Los mapas que muestran la distribución geográfica de enfermedades son un ejemplo de datos espaciales en medicina. Estos mapas pueden representar la incidencia de enfermedades infecciosas, como la malaria o el dengue, en diferentes regiones geográficas. El análisis de datos espaciales puede ayudar a identificar patrones de propagación de enfermedades, identificar áreas de alto riesgo y planificar intervenciones de salud pública.
 
----------------------------
 
-3. **Granularidad de los datos:**
-   - Datos a nivel de instancia: Datos individuales que representan observaciones o eventos específicos, como registros de pacientes o imágenes médicas.
+
+### Granularidad de los datos
+
+La granularidad de los datos se refiere al nivel de detalle o la escala a la que se recopila, registra o presenta la información. Puede variar desde datos a nivel de instancia, que representan observaciones individuales o eventos específicos, hasta datos a nivel de atributo, que representan características o atributos de las instancias.
+
+   - Datos a nivel de instancia: Datos individuales que representan observaciones o eventos específicos, como registros de pacientes o imágenes médicas. 
    - Datos a nivel de atributo: Datos que representan características o atributos de las instancias, como la edad, el peso o los síntomas clínicos.
 
-4. **Fuente de los datos:**
+Un ejemplo en el ámbito de la salud, una consulta médica individual puede ser una instancia de datos, donde se registra información detallada sobre los síntomas, el historial médico y el diagnóstico. A nivel de atributo, los datos pueden incluir características como la edad del paciente, el género, los antecedentes familiares de enfermedades, etc.
+
+### Fuente de los datos
+
    - Datos primarios: Datos recopilados directamente de la fuente original, como registros médicos electrónicos (EHR) o resultados de pruebas de laboratorio.
    - Datos secundarios: Datos que han sido recopilados o procesados por terceros, como conjuntos de datos disponibles en repositorios públicos o bases de datos comerciales.
 
-5. **Volumen de los datos:**
-   - Datos de pequeña escala: Conjuntos de datos relativamente pequeños que pueden caber en la memoria de una sola máquina, como datos de prueba o experimentales.
-   - Datos de gran escala: Conjuntos de datos masivos que requieren sistemas distribuidos o de almacenamiento especializado para su procesamiento, como conjuntos de datos de redes sociales o imágenes médicas de alta resolución.
 
-Estas son solo algunas de las formas de clasificar los datos utilizados en el aprendizaje automático. La comprensión de la naturaleza y las características de los datos es fundamental para seleccionar y aplicar las técnicas de aprendizaje automático más adecuadas para un problema dado.
+## Privacidad y Confidencialidad
 
-## Tipos de datos
+Los datos de salud son extremadamente sensibles y están protegidos por regulaciones estrictas, en el caso de la unión Europea por el Espacio Europeo de Datos Sanitarios([EEDS](https://health.ec.europa.eu/ehealth-digital-health-and-care/european-health-data-space_es)).
+
+Presentado por la Comisión Europea, el objetivo del reglamento del Parlamento Europeo sobre el Espacio Europeo de Datos Sanitarios tiene por objetivo mejorar el acceso, el control y la interoperabilidad de los datos sanitarios electrónicos en la Unión Europea (UE). La pandemia de COVID-19 ha demostrado la necesidad de la utilización de datos sanitarios para el desarrollo de políticas en respuesta a emergencias sanitarias, lo que ha enfatizado la necesidad de garantizar el acceso oportuno a los datos. Además, en la actualidad, las personas físicas tienen dificultades para ejercer sus derechos sobre sus datos sanitarios electrónicos, incluido el acceso y la transmisión; los investigadores, innovadores y responsables políticos encuentran obstáculos para acceder a los datos sanitarios electrónicos necesarios. El EEDS promueve un mejor intercambio y acceso a los diferentes tipos de datos sanitarios electrónicos y permite a los investigadores, los innovadores, los responsables políticos y los reguladores, acceder a los datos para mejorar el diagnóstico, el tratamiento y el bienestar de las personas físicas. Además, el EEDS contribuirá a mejorar la investigación sanitaria, la innovación, la formulación de políticas, la reglamentación y la medicina personalizada.
+
+
+## Registros electrónicos de salud
+
+Los Registros Electrónicos de Salud (EHR, por sus siglas en inglés) son sistemas digitales de registro y gestión de la información médica de los pacientes. Estos sistemas almacenan de manera electrónica la información relacionada con la atención médica de los pacientes, incluyendo historias clínicas, resultados de pruebas de laboratorio, imágenes médicas, medicaciones administradas, diagnósticos, tratamientos, notas de progreso, entre otros datos relevantes. Los EHR están diseñados para facilitar el acceso, la interoperabilidad y la integridad de la información clínica, mejorando así la calidad y la eficiencia de la atención médica.
+
+### Origen y evolución
+
+Los EHR tienen sus raíces en los sistemas de registro de información médica en papel que se han utilizado durante décadas en hospitales, clínicas y consultorios médicos. Estos registros en papel tenían varias limitaciones, incluyendo la dificultad para acceder a la información, la pérdida o deterioro de los registros físicos, y la falta de interoperabilidad entre sistemas de información médica.
+
+El desarrollo de los sistemas de registro médico electrónicos comenzó en la década de 1960 con los primeros intentos de informatizar los registros médicos utilizando tecnología informática primitiva. Sin embargo, no fue hasta finales del siglo XX y principios del siglo XXI cuando los avances en tecnología de la información y la creciente necesidad de mejorar la calidad y la eficiencia en la atención médica llevaron a la adopción generalizada de los EHR.
+
+En los últimos años, ha habido un impulso significativo a nivel mundial para la adopción de los EHR, impulsado por factores como la digitalización de la sociedad, los avances en tecnología de la información y las regulaciones gubernamentales que promueven el uso de registros médicos electrónicos.
+
+### Componentes y Funcionalidades
+
+Los EHR están compuestos por varios componentes y ofrecen una amplia gama de funcionalidades para apoyar la gestión de la atención médica. Algunos de los componentes y funcionalidades comunes de los EHR incluyen:
+
+1. **Historia Clínica Electrónica (EHR):** Almacena información detallada sobre el historial médico de un paciente, incluyendo diagnósticos, tratamientos, procedimientos médicos, alergias, antecedentes familiares y otros datos clínicos relevantes.
+
+2. **Módulos de Registro y Documentación:** Permiten a los profesionales de la salud registrar y documentar información clínica, como notas de progreso, órdenes de tratamiento, informes de alta y otros documentos relacionados con la atención del paciente.
+
+3. **Pedidos y Resultados de Laboratorio:** Facilitan el pedido de pruebas de laboratorio y la visualización de resultados, permitiendo a los médicos acceder rápidamente a los resultados de pruebas de laboratorio y realizar un seguimiento de las tendencias a lo largo del tiempo.
+
+4. **Gestión de Medicamentos:** Ayudan a prescribir, administrar y documentar medicamentos de manera segura y eficiente, incluyendo alertas sobre interacciones medicamentosas, dosis inadecuadas y alergias a medicamentos.
+
+5. **Integración de Imágenes Médicas:** Permiten el almacenamiento, visualización y análisis de imágenes médicas, como radiografías, tomografías computarizadas (CT), resonancias magnéticas (MRI) y ecografías, junto con otros datos clínicos del paciente.
+
+
+
+
+
 

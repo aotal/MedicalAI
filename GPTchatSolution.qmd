@@ -55,7 +55,7 @@ Designing a course on artificial intelligence for a medical degree is an excelle
 
 Medical Imaging and AI represent a rapidly evolving field that has the potential to transform healthcare by enhancing diagnostics, improving treatment planning, and streamlining workflows. Here's an overview of the topic along with some suggested bibliography to delve deeper:
 
-### **Medical Imaging and AI: Overview**
+### Medical Imaging and AI: Overview
 
 1.  **Introduction to Medical Imaging:**
     -   Medical imaging involves various modalities such as X-ray, MRI, CT scans, ultrasound, and more.

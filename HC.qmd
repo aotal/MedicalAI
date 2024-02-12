@@ -1,0 +1,59 @@
+# Historia clínica
+
+## NH  
+
+20240209
+
+## Edad
+
+ 45 años
+
+## Género
+
+Femenino
+
+## Fecha de ingreso 
+
+9 de febrero de 2024
+
+## Motivo de Consulta
+
+La paciente se presenta con dolor abdominal agudo y fiebre.
+
+## Antecedentes Médicos
+
+- Hipertensión arterial diagnosticada hace 5 años, en tratamiento con enalapril 10 mg una vez al día.
+- Diabetes tipo 2 diagnosticada hace 3 años, en tratamiento con metformina 850 mg dos veces al día y glibenclamida 5 mg una vez al día.
+- Obesidad, índice de masa corporal (IMC) de 32.
+- Antecedentes de colecistitis aguda hace 10 años, tratada con colecistectomía laparoscópica.
+
+## Historia Actual
+
+La paciente comenzó a experimentar dolor abdominal agudo en el cuadrante inferior derecho hace aproximadamente 24 horas, asociado con náuseas y vómitos. El dolor ha ido empeorando progresivamente y ahora es severo y constante. También ha notado fiebre de hasta 39°C en las últimas horas. Niega diarrea o cambios en los hábitos intestinales. No ha podido tolerar la ingesta de alimentos debido al dolor y las náuseas.
+
+## Examen Físico
+
+- Signos vitales: TA 150/90 mmHg, FC 100 lpm, FR 20 rpm, T 38.5°C.
+- Aspecto general: paciente obesa, en moderado distress por el dolor abdominal.
+- Abdomen: distendido, con dolor a la palpación profunda en el cuadrante inferior derecho. Reacción de descompresión positiva. No se palpan masas ni visceromegalias. 
+
+## Pruebas Diagnósticas
+
+- Hemograma: leucocitosis con desviación izquierda (18,000/mm3), neutrofilia.
+- Química sanguínea: glucosa en rango (120 mg/dL), aumento de la PCR (reactiva proteína C) (20 mg/L), función renal y hepática dentro de límites normales.
+- Ecografía abdominal: evidencia de engrosamiento de la pared del apéndice cecal, líquido libre en la fosa ilíaca derecha y signos de apendicitis aguda.
+
+## Diagnóstico
+
+Apendicitis aguda.
+
+## Plan de Manejo
+
+- La paciente es admitida para tratamiento médico y manejo quirúrgico de la apendicitis aguda.
+- Se inicia terapia antibiótica empírica con ampicilina/sulbactam y se mantiene en ayuno.
+- Se consulta al servicio de cirugía general para evaluación y programación de apendicectomía laparoscópica urgente.
+- Se controlarán signos vitales, se administrará manejo del dolor y se vigilará la evolución clínica.
+
+## Evolución
+
+La paciente es llevada a cirugía para apendicectomía laparoscópica sin complicaciones. Se observa apéndice inflamado y purulento intraoperatoriamente. Posteriormente, evoluciona favorablemente sin complicaciones y se le da de alta en el tercer día postoperatorio con instrucciones de seguimiento en consulta externa.
