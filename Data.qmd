@@ -139,17 +139,192 @@ En los últimos años, ha habido un impulso significativo a nivel mundial para l
 
 Los EHR están compuestos por varios componentes y ofrecen una amplia gama de funcionalidades para apoyar la gestión de la atención médica. Algunos de los componentes y funcionalidades comunes de los EHR incluyen:
 
-1. **Historia Clínica Electrónica (EHR):** Almacena información detallada sobre el historial médico de un paciente, incluyendo diagnósticos, tratamientos, procedimientos médicos, alergias, antecedentes familiares y otros datos clínicos relevantes.
+#### Historia Clínica Electrónica (EHR)
 
-2. **Módulos de Registro y Documentación:** Permiten a los profesionales de la salud registrar y documentar información clínica, como notas de progreso, órdenes de tratamiento, informes de alta y otros documentos relacionados con la atención del paciente.
+Almacena información detallada sobre el historial médico de un paciente, incluyendo diagnósticos, tratamientos, procedimientos médicos, alergias, antecedentes familiares y otros datos clínicos relevantes.
 
-3. **Pedidos y Resultados de Laboratorio:** Facilitan el pedido de pruebas de laboratorio y la visualización de resultados, permitiendo a los médicos acceder rápidamente a los resultados de pruebas de laboratorio y realizar un seguimiento de las tendencias a lo largo del tiempo.
+#### Módulos de Registro y Documentación
 
-4. **Gestión de Medicamentos:** Ayudan a prescribir, administrar y documentar medicamentos de manera segura y eficiente, incluyendo alertas sobre interacciones medicamentosas, dosis inadecuadas y alergias a medicamentos.
+Permiten a los profesionales de la salud registrar y documentar información clínica, como notas de progreso, órdenes de tratamiento, informes de alta y otros documentos relacionados con la atención del paciente.
 
-5. **Integración de Imágenes Médicas:** Permiten el almacenamiento, visualización y análisis de imágenes médicas, como radiografías, tomografías computarizadas (CT), resonancias magnéticas (MRI) y ecografías, junto con otros datos clínicos del paciente.
+#### Pedidos y Resultados de laboratorio
+
+Facilitan el pedido de pruebas de laboratorio y la visualización de resultados, permitiendo a los médicos acceder rápidamente a los resultados de pruebas de laboratorio y realizar un seguimiento de las tendencias a lo largo del tiempo.
+
+#### Gestión de Medicamentos
+ Ayudan a prescribir, administrar y documentar medicamentos de manera segura y eficiente, incluyendo alertas sobre interacciones medicamentosas, dosis inadecuadas y alergias a medicamentos.
+
+#### Integración de Imágenes Médicas
+
+Permiten el almacenamiento, visualización y análisis de imágenes médicas, como radiografías, tomografías computarizadas (CT), resonancias magnéticas (MRI) y ecografías, junto con otros datos clínicos del paciente.
+
+## Preprocesado de datos médicos
+
+En el ámbito de la salud, el uso de técnicas de preprocesado de datos es fundamental para garantizar la calidad, integridad y utilidad de la información clínica utilizada en análisis, diagnósticos y decisiones médicas. Los datos médicos pueden ser inherentemente complejos debido a la diversidad de fuentes de datos, la heterogeneidad de los datos y la sensibilidad de la información médica. Por lo tanto, aplicar técnicas adecuadas de preprocesado es esencial para extraer conocimientos significativos y precisos de estos datos. A continuación, se presentan algunas de las técnicas más comunes utilizadas en el preprocesado de datos médicos.
+
+### Limpieza de datos
+
+Las observaciones incompletas, es decir, datos que faltan en ciertas variables de un conjunto de datos, son un problema común en el ámbito del machine learning. La falta de datos puede deberse a diversos factores, como errores de medición, fallos en la recolección de datos o simplemente a la naturaleza de los datos mismos. Aquí hay algunas estrategias comunes para abordar este problema:
+
+#### Eliminación de observaciones incompletas
+
+Una estrategia simple es eliminar las observaciones que tienen datos faltantes en alguna de las variables. Esto puede ser efectivo si la cantidad de observaciones eliminadas es pequeña en comparación con el tamaño total del conjunto de datos. Sin embargo, esta estrategia puede llevar a una pérdida significativa de información si hay muchas observaciones con datos faltantes.
+
+#### Imputación de valores
+
+La imputación implica estimar o rellenar los valores faltantes con algún tipo de estimación. Esto puede hacerse utilizando métodos estadísticos simples, como reemplazar los valores faltantes con la media, mediana o moda de la variable correspondiente.
+
+Otras técnicas más avanzadas de imputación incluyen el uso de modelos predictivos, como regresión lineal o métodos de vecinos más cercanos, para predecir los valores faltantes basándose en otras variables del conjunto de datos.
+
+#### Análisis de patrones de datos faltantes
+
+Antes de decidir cómo manejar los datos faltantes, es útil realizar un análisis de patrones de datos faltantes para comprender mejor por qué faltan los datos y si hay algún patrón sistemático en los datos faltantes.
+
+Por ejemplo, es posible que ciertos tipos de observaciones tengan más probabilidades de tener datos faltantes que otros, lo que puede proporcionar información sobre la naturaleza de los datos faltantes y guiar la estrategia de imputación.
+
+#### Uso de modelos predictivos
+
+En algunos casos, es posible utilizar modelos predictivos para estimar los valores faltantes. Esto implica entrenar un modelo con las observaciones completas y utilizarlo para predecir los valores faltantes en las observaciones incompletas.
+
+Este enfoque puede ser especialmente útil cuando los datos faltantes siguen algún patrón discernible y hay suficientes observaciones completas para entrenar un modelo predictivo adecuado.
+
+#### Técnicas de imputación múltiple
+
+Las técnicas de imputación múltiple implican generar múltiples conjuntos de datos imputados y analizar los resultados obtenidos para tener en cuenta la incertidumbre asociada con la imputación de valores faltantes.
+
+Esto puede proporcionar una estimación más robusta de los valores imputados y tener en cuenta la variabilidad inherente en los datos faltantes.
+
+### Normalización de variables continuas
+
+Por supuesto. La normalización de variables continuas es una técnica comúnmente utilizada en el preprocesamiento de datos para aplicaciones de machine learning. Consiste en ajustar la escala de las variables continuas para que tengan una distribución estándar o similar, lo que puede mejorar el rendimiento de los algoritmos de machine learning y facilitar la interpretación de los resultados. Aquí hay algunos aspectos importantes sobre la normalización de variables continuas en el ámbito de los datos de machine learning:
+
+#### Motivación
+
+Las variables continuas pueden tener diferentes escalas y rangos de valores, lo que puede afectar el comportamiento de ciertos algoritmos de machine learning. Por ejemplo, los algoritmos basados en distancias, como k-Nearest Neighbors (k-NN) o Support Vector Machines (SVM), pueden ser sensibles a las diferencias de escala entre las variables.
+
+La normalización ayuda a mitigar este problema al transformar las variables para que estén en una escala similar, lo que facilita la comparación y la interpretación de los coeficientes de las características en modelos lineales.
+
+#### Técnicas de normalización
+
+La normalización más común es la estandarización, que transforma los datos para que tengan una media de 0 y una desviación estándar de 1. Esto se logra restando la media de los datos y dividiendo por la desviación estándar.
+   
+Otra técnica común es la normalización min-max, que escala los datos al intervalo [0, 1] al restar el valor mínimo y dividir por el rango (diferencia entre el máximo y el mínimo).
+
+Otras técnicas incluyen la normalización por robustez (por ejemplo, utilizando la mediana y el rango intercuartil en lugar de la media y la desviación estándar) o la normalización por suma (dividiendo cada valor por la suma total de los valores en la variable).
+
+#### Impacto en los Modelos
+
+La normalización puede mejorar la convergencia y la estabilidad de ciertos algoritmos de optimización, como el descenso de gradiente, al tener una escala consistente en todas las características.
+
+Además, la normalización puede hacer que los modelos sean más interpretables al facilitar la comparación de los coeficientes de las características y su contribución relativa a la predicción.
+
+#### Consideraciones Adicionales
+
+Es importante aplicar la misma transformación de normalización tanto al conjunto de entrenamiento como al conjunto de prueba para evitar sesgos en los datos.
+
+Algunos algoritmos de machine learning, como los árboles de decisión o las redes neuronales con activaciones no lineales, pueden ser menos sensibles a las diferencias de escala y pueden no requerir normalización.
 
 
+### Integración de datos
+
+La integración de datos es un proceso crucial en el ámbito de los datos de machine learning que consiste en combinar datos de múltiples fuentes o conjuntos de datos en un único conjunto de datos coherente y completo. Este proceso es fundamental para mejorar la calidad y la utilidad de los datos utilizados en modelos de machine learning. Aquí hay algunas consideraciones importantes sobre la integración de datos en el contexto del machine learning:
+
+#### Fuentes de Datos Diversas
+
+En muchos casos, los datos utilizados en aplicaciones de machine learning provienen de diversas fuentes, como bases de datos, archivos CSV, sistemas de gestión de datos clínicos, registros electrónicos de salud, datos de sensores, redes sociales, entre otros.
+
+Integrar datos de múltiples fuentes puede proporcionar una visión más completa y holística del problema en cuestión y permitir el análisis de relaciones y patrones que no serían evidentes al analizar cada fuente de datos por separado.
+
+#### Resolución de inconsistencias
+
+Durante el proceso de integración, es común encontrar inconsistencias en los datos, como nombres de variables diferentes, formatos de fecha diferentes o esquemas de datos incompatibles.
+
+Es importante resolver estas inconsistencias mediante la estandarización de nombres de variables, la conversión de formatos de datos y la alineación de esquemas de datos para garantizar la coherencia y la integridad de los datos integrados.
+
+#### Limpieza de Datos
+
+La integración de datos también puede implicar la limpieza y la validación de los datos para detectar y corregir errores, valores atípicos y datos faltantes.
+
+La limpieza de datos durante el proceso de integración es crucial para garantizar la calidad y la confiabilidad de los datos utilizados en los modelos de machine learning.
+
+#### Selección y Transformación de características
+
+Una vez integrados, los datos pueden requerir selección y transformación de características para identificar las variables más relevantes y significativas para el problema de machine learning en cuestión.
+
+La selección y transformación de características pueden ayudar a reducir la dimensionalidad de los datos, mejorar la interpretabilidad del modelo y reducir el riesgo de sobreajuste.
+
+#### Gestión de Datos Temporales
+
+En aplicaciones donde los datos tienen una dimensión temporal, como datos de series temporales o registros médicos longitudinales, la integración de datos también implica gestionar la temporalidad de los datos y asegurar la consistencia temporal entre las diferentes fuentes de datos.
+
+### La ingeniería de características()
+
+Denominada en inglés *feature engineering* es un aspecto fundamental en el desarrollo de modelos de machine learning. Consiste en la creación y selección de características (también conocidas como atributos o variables) que representen de manera efectiva la información relevante para el problema que se está abordando. Aquí hay algunas consideraciones clave sobre la ingeniería de características:
+
+#### Creación de Nuevas características
+
+La creación de nuevas características implica generar variables adicionales a partir de las características existentes en el conjunto de datos original.
+
+Estas nuevas características pueden capturar relaciones complejas entre las variables originales o representar información que no está presente en las características originales.
+
+Ejemplos de técnicas de creación de características incluyen las siguientes:
+
+- **La combinación de características existentes**: Consiste en la creación de nuevas variables derivadas de la combinación o interacción de las características originales en un conjunto de datos. En lugar de crear nuevas variables desde cero, esta técnica aprovecha las características existentes para generar características adicionales que pueden proporcionar información adicional o capturar relaciones más complejas entre las variables originales.
+
+Por ejemplo, supongamos que tenemos un conjunto de datos con las siguientes características: altura (en centímetros) y peso (en kilogramos) de un grupo de personas. Podríamos crear una nueva característica llamada "índice de masa corporal (IMC)" combinando la altura y el peso de cada persona. El IMC se calcula dividiendo el peso (en kilogramos) por el cuadrado de la altura (en metros). Esta nueva característica, el IMC, combina la información de altura y peso en una sola variable que puede proporcionar una medida más informativa sobre la composición corporal de cada persona.
+
+Otro ejemplo podría ser la creación de características polinomiales. Supongamos que tenemos una característica "edad" en nuestro conjunto de datos. Podríamos crear nuevas características cuadráticas o cúbicas al elevar al cuadrado o al cubo la edad. Esto podría capturar relaciones no lineales entre la edad y la variable objetivo, lo que podría mejorar la capacidad predictiva del modelo.
+
+- **La creación de características a partir de conocimientos de dominio específicos**: se refiere a un enfoque en la ingeniería de características donde se utilizan conocimientos expertos o información específica del dominio del problema para diseñar nuevas variables que sean relevantes y significativas para el modelo de machine learning.
+
+En términos simples, significa que se aprovecha el conocimiento especializado sobre el problema o el campo de aplicación en el que se está trabajando para crear características que capturen aspectos importantes y específicos de los datos que pueden influir en la variable objetivo que se está tratando de predecir.
+
+Por ejemplo, en el campo médico, un experto en salud podría sugerir características específicas basadas en su comprensión del funcionamiento del cuerpo humano y los factores que influyen en ciertas enfermedades. Estas características podrían incluir medidas biométricas, indicadores de salud, resultados de pruebas médicas o información sobre tratamientos previos, entre otros.
+
+#### Selección de Características Relevantes
+
+La selección de características implica identificar y retener únicamente las variables más relevantes para el problema de machine learning en cuestión.
+
+Esto puede ayudar a reducir la dimensionalidad de los datos, mejorar la eficiencia computacional del modelo y prevenir el sobreajuste al eliminar características irrelevantes o redundantes.
+
+La selección de características se puede realizar utilizando técnicas estadísticas, como pruebas de hipótesis o métodos de filtrado, o mediante algoritmos de selección de características específicos, como Recursive Feature Elimination (RFE) o Lasso regularization.
+
+### Anonimización de los datos
+
+
+Un punto esencial a tener en cuenta en el procesimiento de datos es protección de la privacidad de los pacientes . La anonimización es un proceso crucial para garantizar el cumplimiento de las leyes de protección de datos de la Unión Europea (UE), como el Reglamento General de Protección de Datos [RGPD](https://eur-lex.europa.eu/ES/legal-content/summary/general-data-protection-regulation-gdpr.html).
+
+#### ¿Qué es la anonimización?
+
+La anonimización es el proceso de eliminar o modificar datos personales de tal manera que ya no sea posible identificar a un individuo a partir de los datos. Esto se puede lograr mediante la eliminación de identificadores directos, como nombres, direcciones y números de identificación, así como mediante la técnica de seudonimización, que reemplaza los identificadores directos por códigos o valores ficticios.
+
+La anonimización permite a los profesionales médicos y a los investigadores utilizar datos de pacientes para diversos fines, como la investigación médica, la mejora de la calidad de la atención y la educación médica, sin poner en riesgo la privacidad de los pacientes.
+
+#### Leyes de protección de datos en la UE
+
+El RGPD es la ley de protección de datos más completa del mundo. La RGPD ee aplica a todas las organizaciones que procesan datos personales de ciudadanos de la UE, independientemente de la ubicación de la organización. El RGPD exige a las organizaciones que implementen medidas técnicas y organizativas para proteger los datos personales, incluida la anonimización.
+
+#### Técnicas de anonimización
+
+Existen varias técnicas de anonimización que se pueden utilizar para proteger los datos de los pacientes. Algunas de las técnicas más comunes incluyen:
+
+-  **Eliminación de identificadores directos:** Esta es la técnica más simple y consiste en eliminar directamente los identificadores como nombres, direcciones y números de identificación.
+
+-  **Pseudonimización:** Esta técnica reemplaza los identificadores directos por códigos o valores ficticios.
+
+-  **Enmascaramiento:** Esta técnica consiste en ocultar o distorsionar ciertos datos, como fechas de nacimiento o códigos postales.
+
+-  **Agregación:** Esta técnica consiste en combinar datos de varios individuos para crear conjuntos de datos que no sean identificables.
+
+En el caso de las imágenes habría que tener cuidado con los metadatos de las imágenes. Recordemos que en las cabeceras puede aparecer información sensible de los pacientes.
+
+#### Consideraciones al elegir una técnica de anonimización
+
+Al elegir una técnica de anonimización, es importante considerar varios factores, como:
+
+- El tipo de datos que se procesan
+- El nivel de riesgo de reidentificación
+- Los fines para los que se utilizarán los datos anonimizados
 
 
 
